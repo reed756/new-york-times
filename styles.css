@@ -56,7 +56,43 @@ div {
 
 .main-content {
     display: grid;
-    grid-template-columns: 1fr 600px 1fr;
-    background: yellow;
-    grid-template-rows: repeat(20, 100px);
+    grid-template-columns: 1fr 1fr 600px 1fr 1fr;
+    background: rgb(238, 238, 238);
+    padding-top: 42px;
+    grid-template-rows: auto;
+}
+
+h1 {
+    border-bottom: 1px solid black;
+    grid-column: 3 / 4;
+}
+
+.main-content img {
+    grid-column: 2 / 5;
+    width: 100%;
+    height: auto;
+    margin: 20px 0 5px 0;
+}
+.main-content figcaption {
+    grid-column: 2 / 4;
+}
+
+.main-content p {
+    grid-column: 3 / 4;
+}
+
+.main-content strong {
+    grid-column: 3 / 4;
+}
+
+.block {
+    font-size: 22px;
+}
+
+.date {
+    font-size: 15px;
+}
+
+.main {
+    margin: 20px 0 20px 0;
 }
