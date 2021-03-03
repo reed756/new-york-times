@@ -11,6 +11,13 @@ div {
 
 /* HEADER */
 
+
+.nav-sticky {
+    position: fixed;    
+    width: 100%;
+}
+
+
 .nav-bar {
     top: 0;
     display: flex;
@@ -43,4 +50,13 @@ div {
     color: white;
     background-color: darkcyan;
     padding: 5px;
+}
+
+/* CONTENT */
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 600px 1fr;
+    background: yellow;
+    grid-template-rows: repeat(20, 100px);
 }
