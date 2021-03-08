@@ -57,7 +57,7 @@ div {
 .main-content {
     display: grid;
     grid-template-columns: 1fr 1fr 600px 1fr 1fr;
-    background: rgb(238, 238, 238);
+    background: white;
     padding-top: 42px;
     grid-template-rows: auto;
 }
@@ -85,6 +85,18 @@ h1 {
     grid-column: 3 / 4;
 }
 
+.link {
+    grid-column: 3 / 4;
+    justify-self: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+.link a {
+    color: cornflowerblue;
+}
+
 .block {
     font-size: 22px;
 }
@@ -95,4 +107,13 @@ h1 {
 
 .main {
     margin: 20px 0 20px 0;
+}
+
+.pic-cap {
+    position: absolute;
+    width: 228px;
+}
+
+.pic-div {
+    grid-column: 2 / 5;
 }
